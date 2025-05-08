@@ -7,40 +7,47 @@
 </head>
 
 <body>
-	<form>
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Name" required><br><br>
-		<label for="email">Email</label>
-		<input type="email" required id="email" placeholder="Email">
-		<br><br>
-		<label>Gender</label><br>
-		<input type="radio" required id="gender_m">
-		<label for="gender_m">Male</label><br>
+	<form method="post">
+  <!-- Name -->
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name" placeholder="Name" required><br><br>
 
-		<input type="radio" required id="gender_f">
-		<label for="gender_f">Female</label><br><br>
-		<br>
-		<label for="cars">Car Brands</label>
-		<select type="select" required id="cars" placeholder="--Please choose an option--">
-			<option value="Toyota">Toyota</option>
-      <option value="Honda">Honda</option>
-      <option value="Ford">Ford</option>
-		</select>
-		<br><br>
-		 <label for="age">Age</label>
-		<input type="Number" required id="age" placeholder="Age"><br>
-		<br>
-		<label for="dob">DOB</label>
-		<input type="date" required id="dob"><br><br>
-		<label for="password">Password</label>
-		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br>
-		<br>
-		<label for="password">Password</label>
-		<input type="password" required id="password" placeholder="Password">
-		<br><br>
-		<input type="checkbox" required id="tos"> 
-		<span>I agree to the TOS</span>
-	</form>
+  <!-- Email -->
+  <label for="email">Email</label><br>
+  <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+  <!-- Gender -->
+  <label>Gender</label><br>
+  <input type="radio" id="gender_m" name="gender" value="male" required>
+  <label for="gender_m">Male</label><br>
+
+  <input type="radio" id="gender_f" name="gender" value="female" required>
+  <label for="gender_f">Female</label><br><br>
+
+  <!-- Car Brands -->
+  <label for="cars">Car Brands</label><br>
+  <select id="cars" name="cars">
+    <option value="" disabled selected>--Please choose an option--</option>
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+    <option value="Mercedez">Mercedez</option>
+  </select><br><br>
+
+  <!-- Age -->
+  <label for="age">Age</label><br>
+  <input type="number" id="age" name="age" placeholder="Age" required><br><br>
+
+  <!-- DOB -->
+  <label for="dob">DOB</label><br>
+  <input type="date" id="dob" name="dob" required><br><br>
+
+  <!-- Password -->
+  <label for="password">Password</label><br>
+  <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+  <!-- Submit -->
+  <button type="submit">Submit</button>
+</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
